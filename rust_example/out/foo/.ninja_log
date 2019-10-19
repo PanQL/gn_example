@@ -1,0 +1,8 @@
+# ninja log v5
+0	496	1569414264	obj/hello_world/bar/src/libbar.rlib	4f141f6348758f7c
+496	686	1569414264	obj/hello_world/foo/src/libfoo.rlib	be9d9b7b5d2e790c
+686	1084	1569414265	obj/hello_world/src/hello_world	4b80afaecd031605
+1084	1086	1569414265	obj/default.stamp	779238219a0eff9c
+1	211	1569414314	obj/hello_world/bar/src/libbar.rlib	4f141f6348758f7c
+211	368	1569414314	obj/hello_world/foo/src/libfoo.rlib	be9d9b7b5d2e790c
+368	695	1569414314	obj/hello_world/src/hello_world	4b80afaecd031605

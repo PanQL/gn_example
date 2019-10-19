@@ -1,0 +1,10 @@
+crate_name = bar
+crate_type = rlib
+output_dir = 
+rustc_output_extension = .rlib
+rustc_output_prefix = lib
+rustflags = -Cdebuginfo=2
+target_out_dir = obj/hello_world/bar/src
+
+build obj/hello_world/bar/src/libbar.rlib: rustc ../../hello_world/bar/src/lib.rs
+  rustdeps =

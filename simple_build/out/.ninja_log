@@ -1,0 +1,7 @@
+# ninja log v5
+0	92	1570524710	obj/libhello_shared.hello_shared.o	599689491788eb2
+0	93	1570524710	obj/libhello_static.hello_static.o	8bfb83e4751e099d
+93	98	1570524710	obj/libhello_static.a	9a99dde11e99baca
+0	100	1570524710	obj/hello.hello.o	4293d7198cbb8eb5
+92	119	1570524710	libhello_shared.so	8fd1756ff28bc6
+119	153	1570524710	hello	d2fc09bd0f6a46a1

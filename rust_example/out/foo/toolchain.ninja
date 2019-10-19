@@ -1,0 +1,16 @@
+rule stamp
+  command = touch ${out}
+  description = STAMP ${out}
+rule rustc
+  command = rustc --crate-name ${crate_name} ${in} --crate-type ${crate_type} --emit=dep-info=${target_out_dir}/${crate_name}.d,link ${rustflags} -o ${target_out_dir}/${rustc_output_prefix}${crate_name}${rustc_output_extension} ${rustdeps} ${externs}
+  description = RUST ${target_out_dir}/${rustc_output_prefix}${crate_name}${rustc_output_extension}
+  depfile = ${target_out_dir}/${crate_name}.d
+  deps = gcc
+rule copy
+  command = cp -af ${in} ${out}
+  description = COPY ${in} ${out}
+
+build obj/default.stamp: stamp obj/hello_world/src/hello_world
+subninja obj/hello_world/bar/src/bar.ninja
+subninja obj/hello_world/foo/src/foo.ninja
+subninja obj/hello_world/src/hello_world.ninja
